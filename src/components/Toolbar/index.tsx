@@ -12,7 +12,6 @@ const Toolbar: FC<ToolbarProps> = () => {
         <li className="logo">
           <a
             href="https://esbuild.github.io/"
-            target="__blank"
             title='esbuild'
           >
             esbuild
@@ -24,8 +23,7 @@ const Toolbar: FC<ToolbarProps> = () => {
         <a
           className="github"
           title='Github'
-          href=""
-          target="__blank"
+          href="https://github.com/piex/esbuild-playground"
         ></a>
       </ul>
     </nav>

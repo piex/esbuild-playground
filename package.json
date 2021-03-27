@@ -5,7 +5,10 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-cli serve --color --mode=development",
-    "build": "webpack-cli build --mode=development"
+    "build": "webpack-cli build --mode=development",
+    "lint": "eslint './' --ext '.ts,tsx'",
+    "gh-pages": "node ./scripts/gh-pages.js",
+    "deploy": "yarn run build && cp ./src/assets/esbuild.wasm ./dist && yarn run gh-pages"
   },
   "dependencies": {
     "core-js": "3.9.1",
@@ -32,6 +35,7 @@
     "eslint": "7.21.0",
     "eslint-plugin-react": "7.22.0",
     "file-loader": "6.2.0",
+    "gh-pages": "3.1.0",
     "html-webpack-plugin": "5.2.0",
     "monaco-editor-webpack-plugin": "3.0.1",
     "postcss-loader": "5.0.0",

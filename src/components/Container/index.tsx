@@ -11,7 +11,7 @@ const Container: FC = () => {
 
   const transform = useCallback(async () => {
     const service = await startService({
-      wasmURL: '/esbuild.wasm',
+      wasmURL: '/esbuild-playground/esbuild.wasm',
     })
 
     service.transform(code, {

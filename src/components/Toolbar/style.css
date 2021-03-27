@@ -1,0 +1,36 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 48px;
+  border-bottom: 2px solid #FFCF00;
+  font-family: "Segoe UI Web (West European)","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+
+  .logo {
+    display: inline-block;
+    margin: 0 16px;
+    line-height: 40px;
+    font-size: 200%;
+    font-weight: bold;
+    padding-left: 50px;
+    background-image: url("../../assets/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+
+    span {
+      margin-left: 8px;
+      font-weight: normal;
+    }
+  }
+
+  .github {
+    display: inline-block;
+    margin: 0 16px;
+    height: 33.3px;
+    padding-right: 40px;
+    background-image: url("../../assets/github.png");
+    background-repeat: no-repeat;
+    background-size: 40px 33.3px;
+  }
+}

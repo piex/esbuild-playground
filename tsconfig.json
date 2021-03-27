@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "declaration": true,
+    "alwaysStrict": true,
+    "pretty": true,
+    "allowJs": false,
+    "jsx": "preserve",
+    "target": "es6",
+    "noLib": false,
+    "lib": [
+      "dom",
+      "es2017",
+      "es2018.promise"
+    ],
+    "noEmitHelpers": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "suppressExcessPropertyErrors": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "types": [
+      "react",
+      "jest"
+    ],
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "sourceRoot": ".",
+    "paths": {}
+  },
+  "include": [
+    ".",
+    "./typings"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
+}

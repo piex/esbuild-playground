@@ -1,0 +1,10 @@
+.dragbar {
+  height: 100%;
+  padding: 3px;
+  cursor: col-resize;
+  margin-left: 2px;
+
+  &:hover {
+    background-color: #d3d3d3;
+  }
+}

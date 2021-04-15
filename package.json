@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-cli serve --color --mode=development",
-    "build": "webpack-cli build --mode=development",
+    "build": "webpack-cli build --mode=production",
     "lint": "eslint './' --ext '.ts,tsx'",
     "gh-pages": "node ./scripts/gh-pages.js",
     "deploy": "yarn run build && cp ./src/assets/esbuild.wasm ./dist && yarn run gh-pages"
@@ -25,7 +25,7 @@
     "@babel/preset-env": "7.13.9",
     "@babel/preset-react": "7.12.13",
     "@babel/preset-typescript": "7.13.0",
-    "@hot-loader/react-dom": "17.0.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "@types/jest": "26.0.20",
     "@types/react": "17.0.2",
     "@types/react-dom": "17.0.1",
@@ -41,11 +41,12 @@
     "postcss": "^8.2.10",
     "postcss-loader": "5.0.0",
     "precss": "4.0.0",
-    "react-hot-loader": "4.13.0",
+    "react-refresh": "^0.10.0",
     "style-loader": "2.0.0",
     "typescript": "4.2.2",
     "webpack": "5.24.2",
     "webpack-cli": "4.5.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpackbar": "^5.0.0-3"
   }
 }

@@ -3,4 +3,5 @@
   max-width: 500px;
   flex-basis: 500px;
   padding: 0 1em 0 0.5em;
+  overflow: scroll;
 }
